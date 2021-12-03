@@ -1,0 +1,13 @@
+.container {
+    width: 1200px;
+  }
+  
+  .main-img-box{
+    // width: 1200px;
+    height: 800px;
+    background-image: url(../assets/main_bus1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+  }
