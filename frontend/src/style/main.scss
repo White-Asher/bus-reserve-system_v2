@@ -1,8 +1,16 @@
 .container {
     width: 1200px;
+    h4{
+      margin-top: 20px;
+      color: rgba($color: #0175e2, $alpha: 1.0);
+      font-size: 20px;
+    }
+    img{
+      margin-bottom: 30px;
+    }
   }
   
-  .main-img-box{
+.main-img-box{
     // width: 1200px;
     height: 800px;
     background-image: url(../assets/main_bus1.jpg);
@@ -10,4 +18,15 @@
     background-position: center;
     background-size: cover;
     overflow: hidden;
-  }
+}
+
+// .facilityInfo{
+//   h4{
+//     margin-top: 20px;
+//     color: rgba($color: #0175e2, $alpha: 1.0);
+//     font-size: 20px;
+//   }
+//   img{
+//     margin-bottom: 30px;
+//   }
+// }

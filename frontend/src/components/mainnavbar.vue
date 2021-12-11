@@ -45,6 +45,11 @@
 <script>
 export default {
   name : 'mainnavbar',
+  data(){
+    return{
+      
+    }
+  }
 }
 </script>
 <style>

@@ -11,10 +11,10 @@
 <script>
 
 export default {
-    name : 'mainfooter',
+    name : 'Mainfooter',
 }
 </script>
 
 <style>
-    
+  @import '../style/main.css';
 </style>

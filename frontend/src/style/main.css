@@ -1,6 +1,14 @@
 .container {
   width: 1200px;
 }
+.container h4 {
+  margin-top: 20px;
+  color: #0175e2;
+  font-size: 20px;
+}
+.container img {
+  margin-bottom: 30px;
+}
 
 .main-img-box {
   height: 800px;
