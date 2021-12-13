@@ -1,4 +1,5 @@
 <template>
+<div class="container">
 <h4>노선정보</h4>
 <table class="table table-striped">
   <thead>
@@ -12,7 +13,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr v-for="index in extrabusroute" :key="index.id">
+    <tr v-for="index in busroutes" :key="index.id">
           <td>{{index.ebr_RouteID}}</td>
           <td>{{index.ebr_RouteDept}}</td>
           <td>{{index.ebr_RouteArrive}}</td>
@@ -22,18 +23,16 @@
     </tr>
   </tbody>
 </table>
-
-
+</div>
 </template>
 
 <script>
 import axios from 'axios';
 export default {
-  name : 'ExtraBusRoute',
+  name : "Extrabusroute",
   data(){
     return{
-      presentUI : Number,
-      extrabusroute : {},
+      busroutes : {},
     }
   },
   components : {
@@ -45,7 +44,7 @@ export default {
   methods: {
     loadextrabusrouteTable: function(){
       axios.get("/api/extrabusroute").then((res) => {
-        this.extrabusroute = res.data.data;
+        this.busroutes = res.data.data;
       })
       .catch(()=>{
         console.log("Something Went Wrong");

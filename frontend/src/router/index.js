@@ -1,32 +1,35 @@
 import { createWebHistory, createRouter } from 'vue-router'
-import mainfooter from '../components/mainfooter'
+import Home from '../components/Home'
 import FacilityInfo from '../components/FacilityInfo'
-import ExtraBusRoute from '../components/ExtraBusRoute'
-import ExtraBusTime from '../components/ExtraBusTime'
-import App from '../App'
+import Extrabusroute from '../components/Extrabusroute'
+import Extrabustime from '../components/Extrabustime'
+import Login from '../components/Login'
 
 const routes = [
     {
         path: "/",
-        component: App,
-    },
-    {
-        path: "/mainfooter",
-        component: mainfooter,
+        component: Home,
     },
     {
         path: "/FacilityInfo",
         component: FacilityInfo,
     },
     {
-        path: "/ExtraBusRoute",
-        component: ExtraBusRoute,
+        path: "/Extrabusroute",
+        component: Extrabusroute,
     },
     {
-        path: "/ExtraBusTime",
-        component: ExtraBusTime,
+        path: "/Extrabustime",
+        component: Extrabustime,
+    },
+    // 버스 예매
+    // 고객지원
+    {
+        path: "/Login",
+        component: Login,
     }
-    
+    // 회원가입
+    // 비밀번호 찾기
 ];
 
 const router = createRouter({
