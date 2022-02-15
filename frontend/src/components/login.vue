@@ -8,12 +8,12 @@
   <label for="inputPassword" class="sr-only">Password</label>
   <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
   <div class="checkbox mb-3">
-    <label>
+    <!-- <label>
       <input type="checkbox" value="remember-me"> 로그인 정보를 저장합니다.
-    </label>
+    </label> -->
     <div class="sign-pw-box">
-        <div><a href="#">회원가입</a></div>
-        <div><a href="#">비밀번호 찾기</a></div>
+        <div><router-link href="#" to="/Memberjoin">회원가입</router-link></div>
+        <!-- <div><a href="#">비밀번호 찾기</a></div> -->
     </div>
 
   </div>

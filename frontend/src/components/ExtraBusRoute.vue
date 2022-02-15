@@ -1,6 +1,14 @@
 <template>
 <div class="container">
 <h4>노선정보</h4>
+  <form class="form-inline">
+    <input class="form-control mr-sm-2" list="datalistOptions" type="text" v-model="test" id="exampleDataList" placeholder="도착지 입력">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" @click="getTime">검색</button>
+    <datalist id="datalistOptions">
+      <option v-for="test in busArriveArea" :key="test.id">{{test}} </option>
+    </datalist>
+  </form>
+
 <table class="table table-striped">
   <thead>
     <tr>
@@ -23,6 +31,8 @@
     </tr>
   </tbody>
 </table>
+{{busroutes[1].ebr_RouteArrive}}
+
 </div>
 </template>
 
@@ -33,6 +43,7 @@ export default {
   data(){
     return{
       busroutes : {},
+      busArriveArea : [],
     }
   },
   components : {
@@ -49,6 +60,11 @@ export default {
       .catch(()=>{
         console.log("Something Went Wrong");
       })
+    },
+    inputDeptArriveList : function(){
+      for(var key in busroutes){
+          console.log();
+      }
     }
   }
 }

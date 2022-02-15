@@ -4,6 +4,8 @@ import FacilityInfo from '../components/FacilityInfo'
 import Extrabusroute from '../components/Extrabusroute'
 import Extrabustime from '../components/Extrabustime'
 import Login from '../components/Login'
+import Memberjoin from '../components/Memberjoin'
+import Customerservice from '../components/Customerservice'
 
 const routes = [
     {
@@ -22,14 +24,18 @@ const routes = [
         path: "/Extrabustime",
         component: Extrabustime,
     },
-    // 버스 예매
-    // 고객지원
+    {
+        path: "/Customerservice",
+        component: Customerservice,
+    },
     {
         path: "/Login",
         component: Login,
+    },
+    {
+        path: "/Memberjoin",
+        component: Memberjoin,
     }
-    // 회원가입
-    // 비밀번호 찾기
 ];
 
 const router = createRouter({
