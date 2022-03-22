@@ -1,17 +1,17 @@
 const express = require("express");
 const mysql = require("mysql");
 const app = express();
-
+require('dotenv').config();
 app.use(express.json())
 app.listen(3000, () => {
     console.log("Server started ...");
 });
 
 const connection = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "wodbs5058",
-    database: "busdb"
+    host: process.env.db_host,
+    user: process.env.db_user,
+    password: process.env.db_password,
+    database: process.env.db_database
 });
 
 connection.connect((err) => {

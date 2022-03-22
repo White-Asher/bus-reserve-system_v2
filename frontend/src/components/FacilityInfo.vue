@@ -7,19 +7,20 @@
 
   <h4>찾아 오시는 길</h4>
   <div>
-      <img src="../assets/facility_img2.jpg">
-    </div>
+      <KakaoMap />
+  </div>
 </div>
 </template>
 <script>
-
+import KakaoMap from "./KakaoMap.vue";
 export default {
   name : 'FacilityInfo',
-  props : {
+    components : {
+    KakaoMap,
 
   },
-  components : {
-        
+  props : {
+
   },
   data() {
     return {

@@ -61,11 +61,11 @@ export default {
         console.log("Something Went Wrong");
       })
     },
-    inputDeptArriveList : function(){
-      for(var key in busroutes){
-          console.log();
-      }
-    }
+    // inputDeptArriveList : function(){
+    //   for(var key in busroutes){
+    //       console.log();
+    //   }
+    // }
   }
 }
 </script>

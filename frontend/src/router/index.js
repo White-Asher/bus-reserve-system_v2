@@ -1,11 +1,13 @@
 import { createWebHistory, createRouter } from 'vue-router'
 import Home from '../components/Home'
 import FacilityInfo from '../components/FacilityInfo'
-import Extrabusroute from '../components/Extrabusroute'
-import Extrabustime from '../components/Extrabustime'
+import ExpressBusInfo from '../components/ExpressBusInfo'
+// import Extrabusroute from '../components/Extrabusroute'
+// import Extrabustime from '../components/Extrabustime'
+import Customerservice from '../components/Customerservice'
 import Login from '../components/Login'
 import Memberjoin from '../components/Memberjoin'
-import Customerservice from '../components/Customerservice'
+
 
 const routes = [
     {
@@ -17,17 +19,23 @@ const routes = [
         component: FacilityInfo,
     },
     {
-        path: "/Extrabusroute",
-        component: Extrabusroute,
+        path: "/ExpressBusInfo",
+        component: ExpressBusInfo,
     },
-    {
-        path: "/Extrabustime",
-        component: Extrabustime,
-    },
+    // {
+    //     path: "/Extrabusroute",
+    //     component: Extrabusroute,
+    // },
+    // {
+    //     path: "/Extrabustime",
+    //     component: Extrabustime,
+    // },
     {
         path: "/Customerservice",
         component: Customerservice,
     },
+
+
     {
         path: "/Login",
         component: Login,

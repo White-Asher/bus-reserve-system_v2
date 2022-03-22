@@ -23,6 +23,7 @@
     "@vue/cli-service": "~4.5.0",
     "@vue/compiler-sfc": "^3.0.0",
     "babel-eslint": "^10.1.0",
+    "dotenv": "^16.0.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^7.0.0"
   },
@@ -38,7 +39,12 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "no-unused-vars": "off"
+    },
+    "globals": {
+      "kakao": false
+    }
   },
   "browserslist": [
     "> 1%",
