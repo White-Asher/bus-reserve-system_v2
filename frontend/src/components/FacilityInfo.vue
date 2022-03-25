@@ -1,12 +1,12 @@
 <template>
 <div class="container">
-  <h4>고객님의 승/하차의 버스 위치를 안내합니다</h4>
-    <div>
-      <img src="../assets/facility_img1.jpg">
+  <h4>시설 안내</h4>
+    <div class="facility-info-img">
+      <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbpBzMJ%2FbtqBg9UsCgZ%2F9sDTwNGjfegogGAXEwCFyk%2Fimg.jpg">
     </div>
-
+  <hr>
   <h4>찾아 오시는 길</h4>
-  <div>
+  <div class="facility-info-img">
       <KakaoMap />
   </div>
 </div>
