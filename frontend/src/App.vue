@@ -3,7 +3,8 @@
 <div id="body-wrapper">
   <div id="body-content">
     <Mainnavbar />
-    <router-view></router-view>
+    <!-- <router-view></router-view> -->
+    <router-view />
     <Mainfooter />
     </div>
 </div>

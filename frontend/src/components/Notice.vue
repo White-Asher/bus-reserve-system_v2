@@ -30,6 +30,11 @@
         </div>
     </div>
 
+    <div style="display: inline-block; float: right; margin:20px;">
+        <button type="button" class="btn btn-secondary" @click="goWritePage()">글작성</button>
+    </div>
+    <div style="clear: both;"></div>
+
 </div>
 </template>
 <script>
@@ -51,7 +56,9 @@ export default {
 
   },
   methods: {
-
+      goWritePage: function(){
+        this.$router.push('/Notice_write')
+    },
   }
 };
 </script>

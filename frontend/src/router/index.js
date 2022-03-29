@@ -2,6 +2,7 @@ import { createWebHistory, createRouter } from 'vue-router'
 import Home from '../components/Home'
 import FacilityInfo from '../components/FacilityInfo'
 import Notice from '../components/Notice'
+import Notice_write from '../components/Notice_write'
 import FrequentlyQnA from '../components/FrequentlyQnA'
 import Customerservice from '../components/Customerservice'
 import Login from '../components/Login'
@@ -19,6 +20,10 @@ const routes = [
     {
         path: "/Notice",
         component: Notice,
+    },
+    {
+        path: "/Notice_write",
+        component: Notice_write,
     },
     {
         path: "/FrequentlyQnA",
